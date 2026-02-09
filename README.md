@@ -22,8 +22,8 @@
 
 1. **克隆仓库**：
    ```bash
-   git clone <仓库地址>
-   cd <项目目录>
+   git clone https://github.com/Yangweikai/amr-device-manager.git
+   cd amr-device-manager/AMR\ bg\ one
    ```
 
 2. **安装依赖**：
@@ -41,7 +41,9 @@
 
 ### 在线部署
 
-详细部署步骤请参考 [DEPLOY.md](./DEPLOY.md)
+详细部署步骤请参考：
+- [Railway 部署指南](./RAILWAY_DEPLOY.md)
+- [Railway 故障排查](./RAILWAY_TROUBLESHOOTING.md)
 
 ## 项目结构
 
@@ -49,7 +51,8 @@
 .
 ├── app.py              # Flask 应用主文件
 ├── requirements.txt    # Python 依赖
-├── Procfile           # Render 部署配置
+├── Procfile           # Railway/Render 部署配置
+├── railway.json       # Railway 部署配置
 ├── runtime.txt        # Python 版本
 ├── templates/         # HTML 模板
 │   └── index.html
@@ -65,4 +68,3 @@
 ## 许可证
 
 本项目仅供内部使用。
-
